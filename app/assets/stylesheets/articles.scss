@@ -1,0 +1,238 @@
+// Place all the styles related to the articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.bg-light {
+    z-index: 10;
+    position: fixed!important;
+    width: 100%;
+    height: 100px;
+    top: 0;
+}
+
+.navbar > .container {
+    margin:auto;
+    padding: 0;
+}
+
+.notice {
+    position: absolute;
+}
+
+.alert {
+    position: absolute!important;
+}
+
+.text-float{
+    float: left;
+}
+
+.margin-top-5per{
+    margin-top: 5%;
+}
+
+.title{
+    font-size: 21px;
+}
+
+.img-height{
+    width: 40%;
+    height: 80%;
+}
+
+.article-block{
+    background-color: white;
+    border: 1px solid #BBBBBB;
+}
+
+.padding-top-15{
+    padding-top: 15px;
+    padding: 50px 0;
+}
+
+.padding-bottom-15{
+    padding-bottom: 15px;
+    position: absolute;
+    bottom: 0;
+    width: 650px;
+    margin: 10px auto;
+    text-align: right;
+    margin-left: 20px;
+    border-top: 2px solid black;
+}
+
+
+.dark{
+    color: #666666;
+}
+
+a{
+    color: #666666;
+}
+
+.col-md-3 {
+    max-width: 100%!important;
+    margin: 20px 0;
+    // margin: auto;
+}
+
+.article-image{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 375px) {
+    .row  {
+        margin: auto!important;
+    }
+}
+
+.none-text-underline{
+    text-decoration: none!important;
+}
+
+.top_image {
+    background: { 
+        image: asset_url("top_bg.png")
+    }
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 680px;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: 100px auto;
+    z-index: 0;
+    position: fixed;
+}
+
+.bg_top {
+    background: #ecf5ff !important;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: relative;
+}
+
+.container {
+    z-index: 10;
+    height: 100%;
+    padding-top: 100px; 
+}
+
+.container.top {
+    margin-top: 780px;
+}
+
+.row_comment {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.col-md-3.margin-top-5per.article-block {
+    max-width: 100%!important;
+    height: 400px;
+    transition: 1.5s;
+}
+
+.col-md-3.margin-top-5per.article-block.top:hover {
+    box-shadow: 0 0 8px blue;
+    transform: scale(1.1);
+}
+
+.col-md-3.margin-top-5per.article-block a {
+    display: flex;
+    justify-content: left;
+    text-decoration: none;
+}
+
+.col-md-3.margin-top-5per.article-block .btn-primary ,
+.col-md-3.margin-top-5per.article-block .btn-danger{
+    text-decoration: none;
+    display: inline-block;
+}
+
+.cotents_main {
+    width: 100%;
+}
+
+.title.dark {
+    font-size: 30px;
+    text-align: center;
+    max-width: 90%;
+    margin: 30px auto;
+}
+
+.main_contents {
+    text-align: left;
+    color: black;
+    font-size: 28px;
+    padding: 0 30px;
+    overflow: scroll;
+    height: 200px;
+}
+
+.col-md-3 {
+    flex: none!important ;
+}
+
+.row .new-posts {
+    margin: 50px auto;
+}
+
+// show
+.container.show {
+    margin-top: 0!important;
+    padding-top: 170px;
+    padding-bottom: 100px;
+}
+
+.blog-title {
+    padding: 0 30px; 
+}
+
+.container.show .col-md-3 {
+    max-width: 100% !important;
+    height: 100%;
+    transition: 1.5s;
+}
+
+.img-responsive.article-image-show.padding-top-15 {
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.blog-contents {
+    padding-bottom: 15px;
+    margin: 10px auto;
+}
+
+// edit
+
+.container.edit .col-md-3.margin-top-5per.article-block {
+    max-width: 100% !important;
+    height: 100%!important;
+    transition: 0s;
+    padding-bottom: 50px;
+} 
+
+.container.edit .col-md-3.margin-top-5per.article-block img {
+    height: 100%;
+}
+
+.padding-bottom-15.edit-form {
+    padding-bottom: 15px;
+    margin: 10px auto;
+    margin-left: 20px;
+}
+
+.text-center.blog-title {
+    margin-top: 30px;
+}
+

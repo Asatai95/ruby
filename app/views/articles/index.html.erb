@@ -1,0 +1,45 @@
+<div class="top_image"></div>
+<div class="bg_top">
+  <div class="container top">
+    <div class="row">
+    <div>   <%#   ←←rowをdivで囲わないと行けないとかなんとか %>
+      <div class="row ">
+        <p class="row_comment">〜日々tamaki.blogは進化する〜</p>
+        <% @articles.each do |article| %>
+          <div class="col-md-3 margin-top-5per article-block top" class="text-float" >
+            <%= link_to article do %>
+            <%= image_tag 'dog.jpg', class: 'img-responsive img-height padding-top-15' %>
+            <div class="cotents_main">
+              <p class ="title dark"><%= article.title %></p>
+              <p class ="main_contents"><%= article.body %></p>
+              <div class= "padding-bottom-15">
+                <span class="dark">
+                <%= article.created_at.strftime("%Y年%m月%d日")%>
+                </span>
+              </div>
+            </div>
+            <% end %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+    </div>
+    <% if user_signed_in? %>
+    <div class="row">
+      <%= link_to '新規作成', new_article_path, class:"margin-top-5per btn btn-primary new-posts" %>
+    </div>
+    <% else %>
+    <% end %>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
